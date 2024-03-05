@@ -155,7 +155,8 @@
         "Japan",
         "America",
         "Others"
-      ]
+      ],
+      "default": "America"
     },
     {
       "tag":"Telegram",
@@ -280,8 +281,8 @@
       "tag":"Microsoft",
       "type":"selector",
       "outbounds":[
-        "direct",
         "HongKong",
+        "direct",
         "TaiWan",
         "Singapore",
         "Japan",
