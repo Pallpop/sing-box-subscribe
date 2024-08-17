@@ -466,7 +466,7 @@
       },
       {
         "domain_suffix": [
-          ".misakaf.org"
+          "misakaf.org:443"
         ],
         "outbound": "direct"
       },
