@@ -277,8 +277,8 @@
       "tag":"Microsoft",
       "type":"selector",
       "outbounds":[
-        "direct",
         "HongKong",
+        "direct",
         "TaiWan",
         "Singapore",
         "Japan",
@@ -461,6 +461,12 @@
           "yacd.metacubex.one",
           "yacd.haishan.me",
           "d.metacubex.one"
+        ],
+        "outbound": "direct"
+      },
+      {
+        "domain_suffix": [
+          "misakaf.org"
         ],
         "outbound": "direct"
       },
