@@ -471,6 +471,10 @@
         "outbound": "direct"
       },
       {
+        "domain_suffix": "black.qimo.ink",
+        "outbound": "block"
+      },
+      {
         "ip_is_private": true,
         "outbound": "direct"
       },
