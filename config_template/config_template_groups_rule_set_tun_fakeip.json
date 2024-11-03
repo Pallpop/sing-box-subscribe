@@ -108,7 +108,7 @@
       ],
       "stack": "system",
       "auto_route": true,
-      "strict_route": true,
+      "strict_route": false,
       "sniff": true,
       "platform": {
         "http_proxy": {
@@ -338,8 +338,7 @@
       "tag":"AdBlock",
       "type":"selector",
       "outbounds":[
-        "block",
-        "direct"
+        "block"
       ]
     },
     {
@@ -471,7 +470,7 @@
         "outbound": "direct"
       },
       {
-        "domain_suffix": "black.qimo.ink",
+        "domain": "black.qimo.ink",
         "outbound": "block"
       },
       {
