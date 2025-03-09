@@ -108,11 +108,8 @@
       "outbounds": [
         "auto",
         "direct",
-	"HongKong",
-	"Singapore",
-	"America"
-      ],
-      "default": "Singapore"
+        "{all}"
+      ]
     },
     {
       "tag": "OpenAI",
