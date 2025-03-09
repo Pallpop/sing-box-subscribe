@@ -108,11 +108,8 @@
       "outbounds": [
         "auto",
         "direct",
-	"HongKong",
-	"Singapore",
-	"America"
-      ],
-      "default": "Singapore"
+        "{all}"
+      ]
     },
     {
       "tag": "OpenAI",
@@ -193,7 +190,7 @@
       "type": "selector",
       "outbounds": [
         "TaiWan",
-        "Proxy"
+        "Global"
       ],
       "default": "TaiWan"
     },
@@ -316,7 +313,7 @@
       "type": "selector",
       "outbounds": [
         "direct",
-        "Proxy"
+        "Global"
       ]
     },
     {
@@ -434,7 +431,7 @@
   ],
   "route": {
     "auto_detect_interface": true,
-    "final": "Proxy",
+    "final": "Global",
     "rules": [
       {
         "inbound": [
@@ -457,6 +454,7 @@
         "action": "hijack-dns"
       },
       {
+        "domain": "black.qimo.ink",
         "rule_set": "geosite-category-ads-all",
         "action": "reject"
       },
@@ -466,11 +464,7 @@
       },
       {
         "clash_mode": "global",
-        "outbound": "Proxy"
-      },
-      {
-        "domain": "black.qimo.ink",
-        "outbound": "block"
+        "outbound": "Global"
       },
       {
         "ip_cidr": [

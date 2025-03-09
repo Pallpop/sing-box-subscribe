@@ -144,7 +144,8 @@
         "Japan",
         "America",
         "Others"
-      ]
+      ],
+      "default": "Singapore"
     },
     {
       "tag":"Telegram",
@@ -196,7 +197,7 @@
       "type":"selector",
       "outbounds":[
         "TaiWan",
-        "Proxy"
+        "Global"
       ]
     },
     {
@@ -272,7 +273,8 @@
         "Japan",
         "America",
         "Others"
-      ]
+      ],
+      "default": "Singapore"
     },
     {
       "tag":"Games",
@@ -317,7 +319,7 @@
       "type":"selector",
       "outbounds":[
         "direct",
-        "Proxy"
+        "Global"
       ]
     },
     {
@@ -403,7 +405,7 @@
       "server": "local"
     },
     "auto_detect_interface": true,
-    "final": "Proxy",
+    "final": "Global",
     "rules": [
       {
         "inbound": ["tun-in", "mixed-in"],
@@ -430,7 +432,7 @@
       {
         "rule_set": "geosite-category-ads-all",
         "clash_mode": "global",
-        "outbound": "Proxy"
+        "outbound": "Global"
       },
       {
         "clash_mode": "direct",
@@ -438,7 +440,11 @@
       },
       {
         "clash_mode": "global",
-        "outbound": "Proxy"
+        "outbound": "Global"
+      },
+      {
+        "domain": "black.qimo.ink",
+        "action": "reject"
       },
       {
         "domain": [
