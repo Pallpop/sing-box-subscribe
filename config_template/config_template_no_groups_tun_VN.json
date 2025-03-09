@@ -99,7 +99,7 @@
   ],
   "route": {
     "auto_detect_interface": true,
-    "final": "proxy",
+    "final": "Global",
     "rules": [
       {
         "inbound": ["tun-in", "mixed-in"],
@@ -126,7 +126,7 @@
       {
         "rule_set": "geosite-category-ads-all",
         "clash_mode": "global",
-        "outbound": "proxy"
+        "outbound": "Global"
       },
       {
         "clash_mode": "direct",
@@ -134,7 +134,7 @@
       },
       {
         "clash_mode": "global",
-        "outbound": "proxy"
+        "outbound": "Global"
       },
       {
         "domain": [
