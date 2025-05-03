@@ -99,7 +99,7 @@
   ],
   "route": {
     "auto_detect_interface": true,
-    "final": "Global",
+    "final": "proxy",
     "rules": [
       {
         "inbound": ["tun-in", "mixed-in"],
@@ -126,7 +126,7 @@
       {
         "rule_set": "geosite-category-ads-all",
         "clash_mode": "global",
-        "outbound": "Global"
+        "outbound": "proxy"
       },
       {
         "clash_mode": "direct",
@@ -134,7 +134,11 @@
       },
       {
         "clash_mode": "global",
-        "outbound": "Global"
+        "outbound": "proxy"
+      },
+      {
+        "domain": "black.qimo.ink",
+        "action": "reject"
       },
       {
         "domain": [
